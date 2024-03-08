@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slowcarshop</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="assets/icons/all.js"></script>
+    <meta name="description" content="Welcome to SlowCarShop, where horsepower and top speed are equivalent (on a good day.) Lex is a jdm hatchback enthusiast with no need for speed. it's okay to take it slow! ゆっくりしても大丈夫！">
+</head>
+<body id="body">
+
+    <!--POP UP MENU-->
+    <div id="menu">
+        <div class="nav-wrapper">
+            <div class="nav">
+                <h1 class="nav-third-sections" id="menu-toggle-button" onclick="toggleMenu()"><i class="fa-solid fa-xmark"></i></h1>
+                <a href="index.html"><h1 class="nav-third-sections nav-scs">SLOWCARSHOP</h1></a>
+                <a href="index.html"><img class="nav-logo"src="assets/slow_logo.png" alt=""></a>
+            </div>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="https://slowcarshop.bigcartel.com">Shop</a>
+    </div>
+
+    <main id="index-main">
+         <!--TOP NAVIGATION-->
+        <div class="nav-wrapper">
+            <div class="nav">
+                <h1 class="nav-third-sections" id="menu-toggle-button" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></h1>
+                <a href="index.html"><h1 class="nav-third-sections nav-scs">SLOWCARSHOP</h1></a>
+                <a href="index.html"><img class="nav-logo"src="assets/slow_logo.png" alt=""></a>
+            </div>
+        </div>
+        <!--END OF TOP NAV-->
+        <div class="row donate-wrapper">
+            <a class="donate" target="_blank" href="https://www.gofundme.com/f/37g08t18bc?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer"><h1>Donate to help save civ!</h1></a>
+        </div>
+        
+
+        <div class="header row">
+            <a href="https://www.youtube.com/@slowcarshop" target="_blank">
+                <div class="header-photo watch-button" id="watch-img">
+                    <h1 class="header-photo-text">WATCH</h1>
+                </div>
+            </a>
+            <a href="https://slowcarshop.bigcartel.com">
+                <div class="header-photo shop-button" id="shop-img">
+                    <h1 class="header-photo-text">SHOP</h1>
+                </div>
+            </a>
+            <!--<a href="blogs.php">
+                <div class="header-photo"></div>
+                <h1>BLOG</h1>
+            </a>-->
+        </div>
+
+        <!--FOOTER-->
+        <div class="footer row">
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/slowcarshop/" target="_blank">
+                    <i class="socials-icons fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@slowcarshop" target="_blank">
+                    <i class="socials-icons fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://discord.gg/qt6mG728Tz" target="_blank">
+                    <i class="socials-icons fa-brands fa-discord"></i>
+                </a>
+                <a href="https://www.tiktok.com/@slowcarshop" target="_blank">
+                    <i class="socials-icons fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://soundcloud.com/user-611706604" target="_blank">
+                    <i class="socials-icons fa-brands fa-soundcloud"></i>
+                </a>
+            </div>
+            <h3>contact: <a href="mailto:shop.slowcar@gmail.com">shop.slowcar@gmail.com</a></h3>
+            <h3 id="footer-copyright">copyright &copy; 2023 slowcarshop</h3>
+        </div>
+        <!--END FOOTER-->
+    </main>
+
+   
+    
+</body>
+</html>
+
+<script>
+    /*set the menu height to 0 so it goes away when website is opened*/
+    document.getElementById('menu').style.height = "0%";
+
+    function toggleMenu() {
+        console.log(document.getElementById('menu').style.height);
+        if (document.getElementById('menu').style.height == "0%") {
+            console.log("opening menu...");
+            document.getElementById('menu').style.height = "100%";
+            //document.getElementById('index-main').style.filter = "blur(4px)";
+        } else {
+            console.log("closing menu...");
+            document.getElementById('menu').style.height = "0%";
+            //document.getElementById('index-main').style.filter = "blur(0px)";
+
+        }
+    }
+
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+    }
+
+    randWatch = getRandomInt(1,3);
+    randShop = getRandomInt(1,6);
+    console.log("watch" + randWatch + ", shop" + randShop);
+
+    document.getElementById('watch-img').style.backgroundImage = 'url("assets/watch' + randWatch + '.jpg")';
+
+    document.getElementById('shop-img').style.backgroundImage = 'url("assets/shop' + randShop + '.jpg")';
+</script>
+
+<!--
+    hehe funny
+    <audio id='titanictheme'>
+        <source src="assets/titanic_theme.mp3" type="audio/mpeg">
+    </audio>
+
+<script>
+    function titanic() {
+        console.log("titanic mode initiated");
+        document.getElementById('body').style.backgroundImage = "url('assets/01\ 1min\ Titanic\ gif.mov')";
+        document.getElementById('titanictheme').play();
+    }
+
+    function copyright() {
+        document.getElementById('body').innerHTML = "<a href='https://www.gofundme.com/f/donate-to-help-lex-looter-get-a-roomba?utm_campaign=p_lico+share-sheet&utm_medium=copy_link&utm_source=customer'><img src='assets/roomba.jpg' width='100%' height='100%'></a>";
+    }
+
+    
+
+</script>
+
+-->

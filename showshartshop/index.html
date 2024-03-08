@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowCarSlop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bc447cdc11.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <div class="nav">
+        <h1 class="nav-third-sections">☰menu</h1>
+        <h1 class="nav-third-sections nav-scs">showshartslop</h1>
+        <img class="nav-logo" onclick="titanic()" src="assets/slow_logo.png" alt="">
+    </div>
+    <div class="header">
+        <a href="https://www.youtube.com/@slowcarshop" target="_blank">
+            <div class="header-photo">
+            </div>
+            <h1>WATCH</h1>
+        </a>
+        <a href="https://www.youtube.com/@slowcarshop">
+            <div class="header-photo"></div>
+            <h1>SHOP</h1>
+        </a>
+        <a href="https://www.youtube.com/@slowcarshop">
+            <div class="header-photo"></div>
+            <h1>BLOG</h1>
+        </a>
+    </div>
+    <div class="footer">
+        <div class="footer-socials">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-discord"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <h1>contact: slop.showcar@gmail.com</h1>
+        <h1 onclick="copyright()">copyright 42069 &copy;</h1>
+        <audio id='titanictheme'>
+            <source src="assets/fische.mp4" type="audio/mpeg">
+        </audio>
+    </div>
+    
+</body>
+</html>
+<script>
+    function titanic() {
+        console.log("gangnam mode initiated");
+        document.getElementById('body').style.backgroundImage = "url('assets/fische.mp4')";
+        document.getElementById('titanictheme').play();
+    }
+
+    function copyright() {
+        document.getElementById('body').innerHTML = "<a href='https://www.gofundme.com/f/donate-to-help-lex-looter-get-a-roomba?utm_campaign=p_lico+share-sheet&utm_medium=copy_link&utm_source=customer'><img style='transform:rotate(180deg);' src='assets/roomba.jpg' width='100%' height='100%'></a>";
+    }
+
+    
+
+</script>
